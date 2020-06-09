@@ -13,7 +13,7 @@ const User: React.FC<Props> = ({ user }) =>{
   return(
     <div>
     <strong>Nome: { user.name } </strong> <br />
-    <strong>E-mail: { user.email || 'Não possui email, por favor verifique os seus dados' } </strong> <br />
+    <strong>E-mail: { user.email || 'Não possui email, por favor verifique a sua conta' } </strong> <br />
     </div>
   );
 }
