@@ -14,11 +14,11 @@ interface IMessageDTO {
     message: IMailMessage
 }
 
-interface IEmailService{
+interface IEEmailService{
     sendMail(request: IMessageDTO) : void
 }
 
-class EmailService implements IEmailService {
+class EmailService implements IEEmailService {
 
     sendMail({ to, message }: IMessageDTO){
         console.log(`Email enviado ${to.email}: ${message.subject}`)
